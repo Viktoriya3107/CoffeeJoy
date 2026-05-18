@@ -1,0 +1,41 @@
+/* mobile menu animation*/
+@keyframes slide {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/*success subscription animation*/
+@keyframes stretch {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(100%) scale(0.2);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(100%) scale(1);
+  }
+}
+
+/* button animation*/
+@media only screen and (min-width: 1440px) {
+  .animated-button {
+    transition: all 0.3s ease;
+  }
+
+  .animated-button:hover,
+  .animated-button:focus {
+    transform: translateY(2px);
+    box-shadow: 0 0 1px 0 var(--opacity-neutral-darkest-5),
+      inset 0 -1px 1px 0 var(--opacity-neutral-darkest-25),
+      inset 0 0 0 1px var(--opacity-neutral-darkest-15),
+      inset 0 1px 1px 0 var(--opacity-white-20),
+      inset 0 24px 18px 0 var(--opacity-white-5);
+  }
+}

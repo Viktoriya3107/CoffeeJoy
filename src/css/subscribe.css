@@ -1,0 +1,225 @@
+/* ===== SUBSCRIBE SECTION ===== */
+
+.subscribe .container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.subscribe-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.subscribe-column {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.subscribe-heading {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.subscribe-heading-line-first,
+.subscribe-heading-line-second,
+.subscribe-heading-line-third {
+  display: block;
+}
+
+.subscribe-text {
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--color-text);
+}
+
+.subscribe-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ===== FORM ===== */
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+}
+
+.subscribe-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--opacity-neutral-darkest-60);
+
+  background-color: var(--opacity-white-0);
+  border: 1px solid var(--opacity-neutral-darkest-15);
+  border-radius: 12px;
+}
+
+/* Placeholder states */
+.subscribe-input::placeholder {
+  color: var(--opacity-neutral-darkest-60);
+  transition: opacity 0.3s ease;
+}
+
+.subscribe-input:focus::placeholder,
+.subscribe-input:hover::placeholder {
+  opacity: 0;
+}
+
+/* Input states */
+.subscribe-input:not(:placeholder-shown),
+.subscribe-input:focus {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-text);
+}
+
+.subscribe-input:not(:placeholder-shown):invalid {
+  color: var(--color-error-red);
+}
+
+.subscribe-input:focus {
+  outline: none;
+}
+
+.subscribe-input:focus:invalid {
+  border-color: var(--opacity-neutral-darkest-15);
+}
+
+.subscribe-input:invalid:placeholder-shown::placeholder {
+  color: var(--opacity-neutral-darkest-60);
+}
+
+/* Error message */
+.subscribe-input-error {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--color-error-red);
+
+  position: absolute;
+  top: 40px;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.subscribe-input:invalid:not(:placeholder-shown) ~ .subscribe-input-error {
+  opacity: 1;
+}
+
+/* Button */
+.subscribe-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 24px;
+  flex-shrink: 0;
+
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-white);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+
+  background-color: var(--color-button);
+  border: 0;
+  border-radius: 100px;
+  box-shadow:
+    inset 0px 32px 24px 0px var(--opacity-white-5),
+    inset 0px 2px 1px 0px var(--opacity-white-25),
+    inset 0px 0px 0px 1px var(--opacity-neutral-darkest-15),
+    inset 0px -2px 1px 0px var(--opacity-neutral-darkest-50),
+    0px 1px 2px 0px var(--opacity-neutral-darkest-5);
+
+  cursor: pointer;
+}
+
+.icon-chevrons-right {
+  fill: var(--color-white);
+}
+
+.subscribe-text-small {
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--color-text);
+}
+
+/* Image */
+.subscribe-image-container {
+  height: 400px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.subscribe-image,
+.subscribe-image img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.subscribe-image img {
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablet and larger screens */
+@media only screen and (min-width: 768px) {
+  .subscribe-form {
+    flex-direction: row;
+  }
+
+  .subscribe-input {
+    width: 340px;
+  }
+
+  .subscribe-heading-line-first,
+  .subscribe-heading-line-second,
+  .subscribe-heading-line-third {
+    display: inline;
+  }
+}
+
+/* Desktop screens */
+@media only screen and (min-width: 1440px) {
+  .subscribe .container {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .subscribe-column {
+    width: 640px;
+  }
+
+  .subscribe-heading-line-third {
+    display: block;
+  }
+}

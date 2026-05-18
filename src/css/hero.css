@@ -1,0 +1,82 @@
+.hero {
+    
+
+}
+.hero-div {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(/img/img01.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 108px 32px ;
+
+
+
+}
+
+.hero-h1 {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    color: var(--color-white);
+}
+
+.hero-p {
+    margin-top: 24px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--color-white);
+
+}
+
+.hero-button {
+    margin-top: 32px;
+    border-radius: 100px;
+    padding: 10px 24px;
+    width: 135px;
+    height: 44px;
+    box-shadow: 0 1px 2px 0 var(--opacity-neutral-darkest-5), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px var(--opacity-neutral-darkest-15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 var(--opacity-white-5);
+    background: var(--color-button);
+    border: none;
+    font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: var(--color-white);
+}
+
+ @media screen and (min-width:768px) {
+.hero-div {
+
+        padding: 311px 176px 311px 32px;
+        
+    }
+     
+ }
+
+ @media screen and (min-width:1440px) {
+    .hero-h1 {
+        font-family: var(--second-family);
+            font-weight: 400;
+            font-size: 56px;
+            line-height: 120%;
+            letter-spacing: -0.01em;
+            color: var(--color-white);
+    }
+        .hero-div {
+
+            padding: 259px 816px 259px 64px;
+
+ }
+}
+
+@media screen and (min-resolution: 192dpi) {
+ .hero-div {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(/img/img01_dpi2.jpg);
+
+   
+  }
+
+}

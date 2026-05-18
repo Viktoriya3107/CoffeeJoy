@@ -1,0 +1,94 @@
+.header {
+    background-color: #e0cbb4;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-box {
+    width: 84px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-coffee {
+    display: block;
+    fill: #0b0803;
+}
+
+.header-nav {
+    display: none;
+}
+
+.nav-list {
+    display: flex;
+    transform-origin: center;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0B0803;
+    text-decoration: none;
+    transition:
+        color 0.3s ease,
+        transform 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #B58869;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transform: scale(1.15);
+}
+
+.burger-btn {
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.icon-menu {
+    fill: #0b0803;
+}
+
+
+@media screen and (min-width: 768px) {
+    .header-nav {
+        display: block;
+    }
+
+    .burger-btn {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+
+    .header-nav {
+        display: block;
+    }
+
+    .burger-btn {
+        display: none;
+    }
+}

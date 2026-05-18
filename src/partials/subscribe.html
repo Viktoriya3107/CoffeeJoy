@@ -1,0 +1,57 @@
+<section class="subscribe" id="subscribe">
+  <div class="container">
+    <div class="subscribe-column">
+      <div class="subscribe-content">
+        <h2 class="subscribe-heading">Join Our Coffee Community</h2>
+        <p class="subscribe-text">
+          Experience the joy of coffee delivered right to your door. Sign up
+          today!
+        </p>
+      </div>
+      <div class="subscribe-actions">
+        <form class="subscribe-form" data-sub-form>
+          <label class="visually-hidden" for="email">Email</label>
+          <input
+            class="subscribe-input"
+            id="email"
+            type="email"
+            placeholder="Your Email Here"
+            required
+          />
+          <span class="subscribe-input-error"
+            >Please enter a valid email address</span
+          >
+          <button
+            class="subscribe-button animated-button"
+            type="submit"
+            data-sub-open
+          >
+            Subscribe
+            <svg class="icon-chevrons-right" width="13px" height="12px">
+              <use href="/img/icons.svg#icon-chevrons-right"></use>
+            </svg>
+          </button>
+        </form>
+
+        <p class="subscribe-text-small">
+          By clicking Get Started, you agree to our Terms and Conditions.
+        </p>
+      </div>
+    </div>
+
+    <div class="subscribe-image-container">
+      <picture class="subscribe-image">
+        <source
+          media="(max-width: 767px)"
+          srcset="/img/img13m.jpg 1x, /img/img13m_dpi2.jpg 2x"
+        />
+        <img
+          srcset="/img/img13.jpg 1x, /img/img13_dpi2.jpg 2x"
+          src="/img/img13.jpg"
+          alt="Coffee Office"
+          loading="lazy"
+        />
+      </picture>
+    </div>
+  </div>
+</section>

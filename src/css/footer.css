@@ -1,0 +1,130 @@
+.footer {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: #B58869;
+    min-width: 320px;
+}
+.footer-container{
+    border: 1px solid rgba(11, 8, 3, 0.15);
+    border-radius: 40px;
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #C29D84;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 375px;
+}
+.footer-logo-block{
+   margin-bottom: 40px;
+    text-align: center;
+}
+.footer-logo svg {
+    display: block;
+        fill: #0B0803;
+    margin: 0 auto;
+}
+.social-list {
+    margin-bottom: 32px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+.social-item svg {
+    fill: #0B0803;
+}
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    text-align: center;
+}
+.footer-nav a {
+  display: inline-block;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0B0803;
+    text-decoration: none;
+        transition:
+        color 0.3s ease,
+        transform 0.2s ease;
+}
+.footer-nav a:hover,
+.footer-nav a:focus {
+color: #B58869;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transform: scale(1.15);
+}
+.footer-copy {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+line-height: 1.5;
+    color: #0B0803;
+}
+@media screen and (min-width: 768px) {
+    .footer {
+      padding-bottom: 24px ;
+      
+            }
+    .footer-container {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       max-width: 704px;
+      
+    }
+    .footer-top {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+    }
+    .footer-nav {
+        flex-direction: row;
+        justify-content: center;
+        gap: 32px;
+        text-align: center;
+    }
+        .footer-logo-block {
+            margin-bottom: 32px;
+            margin-right: 40px;
+        }
+        .footer-logo svg {
+        width: 84px;
+        height: 36px;}
+}
+@media screen and (min-width:  1440px){
+    .footer-container {
+        max-width: 1312px;
+        padding: 32px 48px;
+        flex-direction: row;
+        justify-content: space-between;
+        
+      
+    }
+    .footer-nav a{
+        white-space: nowrap;
+    }
+.footer-top {
+   justify-content: flex-start;
+padding: 0;}
+ .footer-logo-block {
+     margin-bottom: 0;
+ }
+ .social-list {
+     margin-bottom: 0;
+ }
+    .footer-copy {
+        width: 100%;
+        text-align: center;
+    }
+}

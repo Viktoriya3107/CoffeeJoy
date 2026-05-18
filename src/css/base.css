@@ -1,0 +1,57 @@
+:root {
+  --second-family: 'Aboreto', sans-serif;
+  --color-white: #ffffff;
+  --color-footer-background: #b58869;
+  --color-background: #e0cbb4;
+  --color-foreground: #c29d84;
+  --color-button: #6f4e37;
+  --color-text: #0b0803;
+  --color-error-red: #7f1c1c;
+  --opacity-neutral-darkest-5: rgba(11, 8, 3, 0.05);
+  --opacity-neutral-darkest-10: rgba(11, 8, 3, 0.1);
+  --opacity-neutral-darkest-15: rgba(11, 8, 3, 0.15);
+  --opacity-neutral-darkest-20: rgba(11, 8, 3, 0.2);
+  --opacity-neutral-darkest-50: rgba(11, 8, 3, 0.5);
+  --opacity-neutral-darkest-60: rgba(11, 8, 3, 0.6);
+  --opacity-white-0: rgba(255, 255, 255, 0);
+  --opacity-white-5: rgba(255, 255, 255, 0.05);
+  --opacity-white-20: rgba(255, 255, 255, 0.2);
+  --opacity-white-25: rgba(255, 255, 255, 0.25);
+  --opacity-white-5: rgba(255, 255, 255, 0.05);
+  --opacity-white-20: rgba(255, 255, 255, 0.2);
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--color-background);
+}
+
+main {
+  flex-grow: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.is-open {
+  transform: translateX(0);
+}
